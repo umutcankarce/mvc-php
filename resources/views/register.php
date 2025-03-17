@@ -1,14 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-</head>
-<body>
+<!doctype html>
+<html lang="<?=DEFAULT_LANG?>">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Signin Template for Bootstrap</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+    <!-- Bootstrap core CSS -->
+    <link href="<?=PUBLIC_CSS_PATH?>/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom styles for this template -->
+    <link href="<?=PUBLIC_CSS_PATH?>/signin.css" rel="stylesheet">
+  </head>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  <body class="text-center">
+    <form class="form-signin">
+       <h1 class="h3 mb-3 font-weight-normal">Yönetim Paneli</h1>
+      <label for="inputEmail" class="sr-only"><?=__lang('message','email')?></label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="<?=__lang('message','email')?>" required autofocus>
+      <label for="inputPassword" class="sr-only"><?=__lang('message','password')?></label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="<?=__lang('message','password')?>" required>
+      <button class="btn btn-sm btn-primary btn-block" type="submit">Giriş Yap</button>
+     
+    </form>
+  </body>
 </html>

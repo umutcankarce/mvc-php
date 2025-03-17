@@ -100,20 +100,20 @@ class Route
         self::checkMethod();   
 
         // View Göster 
-        foreach($routes[$method] as $url => $page)
+        foreach($routes[$method] as $url => $item)
         {
             $pattern = "@^" . $url . "$@";
             if(preg_match($pattern,$uri,$parameters))
             {
 
                 self::$isRoute = true;
-             dd($parameters);
+                if(is_callable($item["action"])){
+                    call_user_func_array($item["action"],$parameters);
+                }else { 
+                    
+                }
 
-             
-                // controller Bulmak
-              // Controller altında methodu check et.
-    
-               //TODO - URI ->  CONTROLLER/METHOD/{ID}
+         
 
 
 
@@ -121,9 +121,11 @@ class Route
             else
             { 
            
-                self::checkRoute();
+                // self::checkRoute();
             }
         }
+
+        self::checkRoute();
 
        
 

@@ -1,0 +1,10 @@
+{
+    "full_name": "Full Name",
+    "username": "Username",
+    "email": "E-Mail Address",
+    "password": "Password",
+    "confirm_password": "Password Confirm",
+    "register_btn": "Register",
+    "register_title": "Register",
+    "page_not_found": "Page Not Found"
+}

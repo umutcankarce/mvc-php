@@ -1,0 +1,10 @@
+{
+    "full_name": "Ad Soyad",
+    "username": "Kullanıcı Adı",
+    "email": "E-Posta Adresi",
+    "password": "Şifre",
+    "confirm_password": "Şifre Tekrar",
+    "register_btn": "Kayıt Ol",
+    "register_title": "Kayıt Ol",
+    "page_not_found": "Sayfa Bulunamadı"
+}

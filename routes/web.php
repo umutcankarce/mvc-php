@@ -2,11 +2,12 @@
 use \app\Core\Route;
 
 Route::get('/',function(){
-  
+  view("register");
 });
 
-Route::get('/users',function(){
+Route::get('/dashboard',function(){
 
+  view('dashboard');
 });
 
 
