@@ -17,7 +17,8 @@ if(!function_exists('viewError')){
     {
         $filePath =  $_SERVER["DOCUMENT_ROOT"]."/".VIEWS_PATH."errors/". $viewName.'.php';
     
-        if (file_exists($filePath)) {
+        if (file_exists($filePath))
+		{
             extract($data);
             include_once  $_SERVER["DOCUMENT_ROOT"]."/".VIEWS_PATH."errors/". $viewName.'.php';
         } else {
@@ -47,7 +48,6 @@ if(!function_exists('view')){
 if(!function_exists('__lang')){
     function __lang($fileName,$key,$lang=DEFAULT_LANG){
         $filePath = $_SERVER["DOCUMENT_ROOT"]."/".LANG_PATH.$lang."/". $fileName.'.json';
-        //echo "File Path: $filePath<br>";
         if(file_exists($filePath)){
             $translations = json_decode(file_get_contents($filePath), true);        
             return $translations[$key] ?? $key ;

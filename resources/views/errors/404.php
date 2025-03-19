@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container mt-5">
-<div class="alert alert-danger"><b><?php echo $statusCode; ?></b> - <?php echo isset($message) ? $message : __lang('message','page_not_found'); ?></div>
+<div class="alert alert-danger"><b><?php echo isset($statusCode) ? $statusCode : '404'; ?></b> - <?php echo isset($message) ? $message : __lang('message','page_not_found'); ?></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
